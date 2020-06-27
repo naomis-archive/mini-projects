@@ -1,0 +1,51 @@
+*:not(div):not(h2):not(h1):not(form):not(input):not(code):not(p) {
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 255, 0, 0.5) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+main {
+  text-align: center;
+  color: #21ff00;
+  background: rgba(255, 255, 255, 0);
+}
+div {
+  background: #000000;
+  width: 50vw;
+  height: 70vh;
+  margin-left: 25vw;
+  margin-top: 15vh;
+  border-radius: 3em;
+}
+code {
+  border-style: dashed;
+  border: 2px;
+  border-color: #21ff00;
+  background-color: #000000;
+  font-size: 18pt;
+  line-height: 2em;
+}
+
+input {
+  color: #21ff00;
+  background: #000000;
+}
+
+input::placeholder {
+  color: #21ff00;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}

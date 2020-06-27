@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="binary.css" />
+    <script src="binary.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div id="box">
+        <h1>Binary Translator!</h1>
+        <h2>Enter your text to translate below:</h2>
+
+        <form id="translator">
+          <p>
+            <input
+              type="text"
+              id="english"
+              placeholder="English text to translate"
+            />
+            <input
+              type="button"
+              value="Translate to Binary!"
+              onClick="toBinary()"
+            />
+          </p>
+
+          <p>
+            <input
+              type="text"
+              id="binary"
+              placeholder="Binary string to translate"
+            />
+            <input
+              type="button"
+              value="Translate to English!"
+              onClick="fromBinary()"
+            />
+          </p>
+
+          <hr />
+          <p>English: <code id="trans_eng">Try a translation above!</code></p>
+          <p>
+            Binary:
+            <code id="trans_bin"
+              >01010100 01110010 01111001 00100000 01100001 00100000 01110100
+              01110010 01100001 01101110 01110011 01101100 01100001 01110100
+              01101001 01101111 01101110 00100000 01100001 01100010 01101111
+              01110110 01100101 00100001</code
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <a href="../index.html">Return to Project List</a> |
+    <a href="https://www.nhcarrigan.com">Return to HomePage</a>
+  </footer>
+</html>
