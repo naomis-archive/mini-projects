@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./pangram.css" />
+    <script src="./pangram.js"></script>
+    <title>Pangram Checker</title>
+  </head>
+  <body>
+    <h1>Pangram Checker</h1>
+    <p>
+      A "pangram" is a sentence that contains every letter of the alphabet at
+      least once. To check if your sentence is a pangram, enter it in the box
+      below and click "check".
+    </p>
+    <form>
+      <input
+        type="text"
+        id="str"
+        placeholder="Sphinx of black quartz, judge my vow."
+      />
+      <button onclick="check(); return false;">Check!</button>
+    </form>
+    <p id="result"></p>
+  </body>
+  <footer>
+    <a href="../index.html">Return to Project List</a> |
+    <a href="https://www.nhcarrigan.com">Return to HomePage</a>
+  </footer>
+</html>
