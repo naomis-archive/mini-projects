@@ -27,7 +27,6 @@ document.onload(
   users.forEach(async (el) => {
     const user = await getUser(el);
     const stream = await getStream(el);
-    console.log(user, stream);
     const card = {
       name: user.display_name,
       bio: user.bio,
@@ -36,9 +35,9 @@ document.onload(
     };
     if (stream.stream) card.stream = stream.stream.game
     if (!user.bio) card.bio = "Not Provided"
-    resultArea.innerHTML += `<div class="card"><p class="title">${
+    resultArea.innerHTML += `<div class="card"><p class="title"><a href="https://twitch.tv/${card.username}">${
       card.name
-    }</p><p class="bio">Biography: ${
+    }</a></p><p class="bio">Biography: ${
       card.bio
     }</p><p class="stream">Streaming: ${
       card.stream
