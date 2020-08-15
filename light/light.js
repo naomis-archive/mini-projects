@@ -28,7 +28,10 @@ const light = () => {
   });
 };
 
-const clear = () => {};
+const clear = () => {
+  event.target.classList.remove(...event.target.classList);
+  event.target.classList.add("light");
+};
 
 const reset = () => {
   dot.classList.remove(...dot.classList);
@@ -44,6 +47,7 @@ const resetAll = () => {
 
 lights.forEach((lightDot) => {
   lightDot.addEventListener("mousedown", light);
+  lightDot.addEventListener("dblclick", clear)
 });
 
 document.addEventListener("mouseup", () => {
