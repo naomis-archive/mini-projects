@@ -23,33 +23,33 @@ body {
   }
 
   .red {
-      background-color: red !important;
+      background: radial-gradient(white, red) !important;
   }
 
   .blue {
-      background-color: blue !important;
+    background: radial-gradient(white, blue) !important;
   }
 
   .green {
-      background-color: green !important;
+    background: radial-gradient(white, green) !important;
   }
 
   .yellow {
-      background-color: yellow !important;
+    background: radial-gradient(white, yellow) !important;
   }
 
   .purple {
-      background-color: purple !important;
+    background: radial-gradient(white, purple) !important;
   }
 
   .orange {
-      background-color: orangered !important;
+    background: radial-gradient(white, orangered) !important;
   }
 
   .teal {
-      background-color: teal !important;
+    background: radial-gradient(white, teal) !important;
   }
 
   .white {
-      background-color: white !important;
+    background: radial-gradient(white, grey) !important;
   }
