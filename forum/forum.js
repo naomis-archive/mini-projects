@@ -12,6 +12,6 @@ const getPosts = async () => {
         return `<a href="https://forum.freecodecamp.org/u/${users[userInfo].username}">${users[userInfo].username}</a>`
       })
       .join(", ");
-    postContainer.innerHTML += `<div class="post"><p class="title"><a href="https://forum.freecodecamp.org/t/${post.id}">${post.title}</a></p><p class="date">Created On: ${post.created_at} | Latest Reply: ${post.last_posted_at}</p><p class="counts">Replies: ${post.posts_count} | Likes: ${post.like_count}</p><p class="users">${posted}</div>`;
+    postContainer.innerHTML += `<div class="post"><p class="title"><a href="https://forum.freecodecamp.org/t/${post.id}">${post.title}</a></p><p class="date">Created On: ${new Date(post.created_at).toLocaleString()} | Latest Reply: ${new Date(post.last_posted_at).toLocaleString()}</p><p class="counts">Replies: ${post.posts_count} | Likes: ${post.like_count}</p><p class="users">${posted}</div>`;
   });
 };
