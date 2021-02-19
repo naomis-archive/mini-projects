@@ -7,7 +7,7 @@ These are the files for some of my smaller one-off projects that I didn't see as
 
 ## Live Version
 
-This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/mini-projects)
+This project is archived and thus is not deployed.
 
 ## Feedback and Bugs
 
